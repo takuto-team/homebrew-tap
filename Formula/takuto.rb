@@ -1,28 +1,28 @@
 class Takuto < Formula
   desc "Interactive CLI for managing Takuto orchestration containers"
   homepage "https://github.com/takuto-team/takuto-cli"
-  version "0.5.6"
+  version "0.5.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.6/takuto-darwin-arm64"
-      sha256 "346b3928546365e3d936f7be695ad7689c04548860af71393c6aee8dc3eec04f"
+      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.7/takuto-darwin-arm64"
+      sha256 "79e851e583f91f8ebdbc878e69537e5bb13bee162b45285e19181c33f01d74dc"
     end
     on_intel do
-      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.6/takuto-darwin-amd64"
-      sha256 "f47d83df18b87c3e2c61e6aff1f01c5b0aa79af8fdf1175b06423ac25232f20d"
+      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.7/takuto-darwin-amd64"
+      sha256 "dd786e9e29a25ce1f7f400167e284f902bb6fbae203cfaf709f200dd83f1ca31"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.6/takuto-linux-arm64"
-      sha256 "a3ef2da72990566773793c43b5c7200e955899a949643db4e442c313012ea624"
+      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.7/takuto-linux-arm64"
+      sha256 "4714715ee3738a88affb5b357a95338a7dee798c5c54ca29d8e9ef44282d7f03"
     end
     on_intel do
-      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.6/takuto-linux-amd64"
-      sha256 "8962c8c6cf41fec281c688b53bd424d97ebf918acd2f64d751040b7024b450a0"
+      url "https://github.com/takuto-team/takuto-cli/releases/download/vv0.5.7/takuto-linux-amd64"
+      sha256 "23866fc9edfa64007c5b1fcdbe96823faf52c7c9a82f2bc49ab967344b9a7017"
     end
   end
 
@@ -31,6 +31,6 @@ class Takuto < Formula
   end
 
   test do
-    assert_match "0.5.6", shell_output("#{bin}/takuto --version")
+    assert_match "0.5.7", shell_output("#{bin}/takuto --version")
   end
 end
